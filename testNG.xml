@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Amazon Website using Selenium" >
+    <test name="Purchasing a Shirt"  preserve-order = "true" >
+
+        <parameter name="customerName" value="Thanusiga"/>
+        <parameter name="email" value="as2017552@sci.sjp.ac.lk"/>
+        <parameter name="password" value="As2017552"/>
+        <parameter name="passwordCheck" value="As201552"/>
+
+        <classes >
+            <class name="Amazon.HomePage"/>
+            <class name="Amazon.ShirtPage"/>
+            <class name="Amazon.CustomizedOrderPage"/>
+            <class name="Amazon.AddToCartPage"/>
+            <class name="Amazon.ViewCartPage"/>
+            <class name="Amazon.CreateAccount"/>
+
+        </classes>
+    </test> <!--Test-->
+
+</suite>
